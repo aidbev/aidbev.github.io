@@ -1,0 +1,324 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Airlines</title>
+    <meta charset="UTF-8">
+    <base target="_blank">
+    <link href="http://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet" type="text/css">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/vis/3.7.2/vis.min.css" rel="stylesheet" type="text/css">
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <script type="text/javascript" src="airlines.json"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/vis/3.7.2/vis.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- // <script src="jquery.min.js"></script> -->
+    <style type="text/css">
+      body {
+        font: 11pt "Montserrat";
+      }
+      #airlines {
+        width: 1024px;
+        height: 768px;
+        border: 1px solid red;
+      }
+      .logo {
+        display: inline-block;
+        background: url('iata.png') no-repeat;
+        zoom: 0.5;
+        -moz-transform: scale(0.5);
+        -moz-transform-origin: 0 0;
+        overflow: hidden;
+        text-indent: -9999px;
+        text-align: left;
+        width: 70px;
+        height: 70px;
+        vertical-align: middle;
+      }
+      ._3m { background-position: -1px -0px; }
+      ._4h { background-position: -72px -0px; }
+      ._4u { background-position: -143px -0px; }
+      ._5j { background-position: -214px -0px; }
+      ._5t { background-position: -285px -0px; }
+      ._6a { background-position: -356px -0px; }
+      ._7d { background-position: -427px -0px; }
+      ._7f { background-position: -498px -0px; }
+      ._8t { background-position: -569px -0px; }
+      ._8u { background-position: -640px -0px; }
+      ._9k { background-position: -711px -0px; }
+      ._9w { background-position: -782px -0px; }
+      ._a3 { background-position: -853px -0px; }
+      ._a5 { background-position: -1px -71px; }
+      ._aa { background-position: -72px -71px; }
+      ._ab { background-position: -143px -71px; }
+      ._ac { background-position: -214px -71px; }
+      ._ad { background-position: -285px -71px; }
+      ._af { background-position: -356px -71px; }
+      ._ah { background-position: -427px -71px; }
+      ._ai { background-position: -498px -71px; }
+      ._ak { background-position: -569px -71px; }
+      ._am { background-position: -640px -71px; }
+      ._ap { background-position: -711px -71px; }
+      ._ar { background-position: -782px -71px; }
+      ._as { background-position: -853px -71px; }
+      ._at { background-position: -1px -142px; }
+      ._av { background-position: -72px -142px; }
+      ._ay { background-position: -143px -142px; }
+      ._az { background-position: -214px -142px; }
+      ._b6 { background-position: -285px -142px; }
+      ._ba { background-position: -356px -142px; }
+      ._be { background-position: -427px -142px; }
+      ._br { background-position: -498px -142px; }
+      ._bt { background-position: -569px -142px; }
+      ._ca { background-position: -640px -142px; }
+      ._cf { background-position: -711px -142px; }
+      ._ci { background-position: -782px -142px; }
+      ._cm { background-position: -853px -142px; }
+      ._cx { background-position: -1px -213px; }
+      ._cy { background-position: -72px -213px; }
+      ._cz { background-position: -143px -213px; }
+      ._dd { background-position: -214px -213px; }
+      ._de { background-position: -285px -213px; }
+      ._dl { background-position: -356px -213px; }
+      ._dt { background-position: -427px -213px; }
+      ._dy { background-position: -498px -213px; }
+      ._ei { background-position: -569px -213px; }
+      ._ek { background-position: -640px -213px; }
+      ._et { background-position: -711px -213px; }
+      ._ey { background-position: -782px -213px; }
+      ._f7 { background-position: -853px -213px; }
+      ._f9 { background-position: -1px -284px; }
+      ._fb { background-position: -72px -284px; }
+      ._fi { background-position: -143px -284px; }
+      ._fj { background-position: -214px -284px; }
+      ._fm { background-position: -285px -284px; }
+      ._fr { background-position: -356px -284px; }
+      ._fs { background-position: -427px -284px; }
+      ._fy { background-position: -498px -284px; }
+      ._fz { background-position: -569px -284px; }
+      ._g3 { background-position: -640px -284px; }
+      ._g4 { background-position: -711px -284px; }
+      ._g8 { background-position: -782px -284px; }
+      ._g9 { background-position: -853px -284px; }
+      ._ga { background-position: -1px -355px; }
+      ._gl { background-position: -72px -355px; }
+      ._ha { background-position: -143px -355px; }
+      ._hg { background-position: -214px -355px; }
+      ._hu { background-position: -285px -355px; }
+      ._hx { background-position: -356px -355px; }
+      ._hy { background-position: -427px -355px; }
+      ._i2 { background-position: -498px -355px; }
+      ._ib { background-position: -569px -355px; }
+      ._j9 { background-position: -640px -355px; }
+      ._je { background-position: -711px -355px; }
+      ._jj { background-position: -782px -355px; }
+      ._jk { background-position: -853px -355px; }
+      ._jl { background-position: -1px -426px; }
+      ._jm { background-position: -72px -426px; }
+      ._jn { background-position: -143px -426px; }
+      ._jp { background-position: -214px -426px; }
+      ._jq { background-position: -285px -426px; }
+      ._jy { background-position: -356px -426px; }
+      ._ka { background-position: -427px -426px; }
+      ._ke { background-position: -498px -426px; }
+      ._kl { background-position: -569px -426px; }
+      ._kq { background-position: -640px -426px; }
+      ._ku { background-position: -711px -426px; }
+      ._la { background-position: -782px -426px; }
+      ._lc { background-position: -853px -426px; }
+      ._lg { background-position: -1px -497px; }
+      ._lh { background-position: -72px -497px; }
+      ._li { background-position: -143px -497px; }
+      ._lj { background-position: -214px -497px; }
+      ._ln { background-position: -285px -497px; }
+      ._lo { background-position: -356px -497px; }
+      ._lx { background-position: -427px -497px; }
+      ._ly { background-position: -498px -497px; }
+      ._lz { background-position: -569px -497px; }
+      ._ma { background-position: -640px -497px; }
+      ._md { background-position: -711px -497px; }
+      ._me { background-position: -782px -497px; }
+      ._mf { background-position: -853px -497px; }
+      ._mh { background-position: -1px -568px; }
+      ._mn { background-position: -72px -568px; }
+      ._ms { background-position: -143px -568px; }
+      ._mt { background-position: -214px -568px; }
+      ._mu { background-position: -285px -568px; }
+      ._my { background-position: -356px -568px; }
+      ._nh { background-position: -427px -568px; }
+      ._nk { background-position: -498px -568px; }
+      ._nl { background-position: -569px -568px; }
+      ._nx { background-position: -640px -568px; }
+      ._nz { background-position: -711px -568px; }
+      ._ok { background-position: -782px -568px; }
+      ._os { background-position: -853px -568px; }
+      ._ou { background-position: -1px -639px; }
+      ._oz { background-position: -72px -639px; }
+      ._pa { background-position: -143px -639px; }
+      ._pc { background-position: -214px -639px; }
+      ._pd { background-position: -285px -639px; }
+      ._pr { background-position: -356px -639px; }
+      ._ps { background-position: -427px -639px; }
+      ._px { background-position: -498px -639px; }
+      ._qf { background-position: -569px -639px; }
+      ._qr { background-position: -640px -639px; }
+      ._qs { background-position: -711px -639px; }
+      ._rj { background-position: -782px -639px; }
+      ._ro { background-position: -853px -639px; }
+      ._s7 { background-position: -1px -710px; }
+      ._sa { background-position: -72px -710px; }
+      ._sg { background-position: -143px -710px; }
+      ._sk { background-position: -214px -710px; }
+      ._sn { background-position: -285px -710px; }
+      ._sq { background-position: -356px -710px; }
+      ._ss { background-position: -427px -710px; }
+      ._su { background-position: -498px -710px; }
+      ._sv { background-position: -569px -710px; }
+      ._sy { background-position: -640px -710px; }
+      ._ta { background-position: -711px -710px; }
+      ._tg { background-position: -782px -710px; }
+      ._tj { background-position: -853px -710px; }
+      ._tk { background-position: -1px -781px; }
+      ._tm { background-position: -72px -781px; }
+      ._tn { background-position: -143px -781px; }
+      ._tp { background-position: -214px -781px; }
+      ._ts { background-position: -285px -781px; }
+      ._tu { background-position: -356px -781px; }
+      ._tz { background-position: -427px -781px; }
+      ._u2 { background-position: -498px -781px; }
+      ._u6 { background-position: -569px -781px; }
+      ._ua { background-position: -640px -781px; }
+      ._ul { background-position: -711px -781px; }
+      ._um { background-position: -782px -781px; }
+      ._un { background-position: -853px -781px; }
+      ._uo { background-position: -1px -852px; }
+      ._ur { background-position: -72px -852px; }
+      ._us { background-position: -143px -852px; }
+      ._uu { background-position: -214px -852px; }
+      ._ux { background-position: -285px -852px; }
+      ._va { background-position: -356px -852px; }
+      ._vn { background-position: -427px -852px; }
+      ._vs { background-position: -498px -852px; }
+      ._vv { background-position: -569px -852px; }
+      ._vx { background-position: -640px -852px; }
+      ._vy { background-position: -711px -852px; }
+      ._w6 { background-position: -782px -852px; }
+      ._wb { background-position: -853px -852px; }
+      ._wf { background-position: -1px -923px; }
+      ._wj { background-position: -72px -923px; }
+      ._wn { background-position: -143px -923px; }
+      ._ws { background-position: -214px -923px; }
+      ._ww { background-position: -285px -923px; }
+      ._xq { background-position: -356px -923px; }
+      ._zb { background-position: -427px -923px; }
+      ._zh { background-position: -498px -923px; }
+      ._zi { background-position: -569px -923px; }
+      ._zk { background-position: -640px -923px; }
+      body {
+        font: 14pt 'Montserrat';
+        font-weight: normal;
+        color: #333;
+      }
+      h2 {
+        font-size: 26pt;
+        font-weight: normal;
+      }
+    </style>
+    <script type="text/javascript">
+      var nodes, edges, options, network;
+      function draw() {
+        nodes=[], edges=[];
+        airlines.forEach(function(airline) {
+          nodes.push({
+            id: airline.iata,
+            label: null,
+            title: airline.name + " (" + airline.iata.toUpperCase()
+              + ")<br/>" + airline.url,
+            group: airline.alliance,
+            shape: 'image',
+            image: 'png/'+airline.iata.toUpperCase()+'.png'
+          });
+          if (typeof airline.ffp == 'string' && ffps[airline.ffp]) {
+            ffps[airline.ffp].redeem.forEach(function(partner) {
+              edges.push({
+                from: airline.iata,
+                to: partner
+              });
+            });
+          }
+        });
+
+        // specify options
+        options = {
+          stabilize: false,
+          configurePhysics:true,
+          navigation: true,
+          edges: {
+            width: 3,
+            style: 'arrow',
+            color: 'gray'
+          },
+          nodes: {
+            // default for all nodes
+            fontFace: 'Montserrat'
+          },
+          physics: {
+            barnesHut:{
+              gravitationalConstant: -8000,
+              springLength: 250,
+              centralGravity: 2,
+              springConstant: 0.08,
+              damping: 0.2
+            }
+          },
+          groups: {
+            // black: {
+            //   // defaults for nodes in this group
+            //   radius: 15,
+            //   color: 'black',
+            //   fontColor: 'white',
+            //   fontSize: 18,
+            //   fontFace: 'courier',
+            //   shape: 'rect'
+            // },
+            gray: {
+              color: {
+                border: 'black',
+                background: 'gray',
+                highlight: {
+                  border: 'black',
+                  background: 'lightgray'
+                }
+              },
+              fontSize: 18,
+              fontFace: 'arial',
+              shape: 'circle'
+            }
+          },
+          tooltip: {
+            delay: 50,
+            fade: 100,
+            fontColor: "black",
+            fontSize: 18, // px
+            fontFace: "Montserrat",
+            color: {
+              border: "#666",
+              background: "#DDF"
+            }
+          },
+          // smoothCurves: false
+        };
+
+        // create the network
+        var container = document.getElementById('airlines');
+        var data = {
+          nodes: nodes,
+          edges: edges
+        };
+        network = new vis.Network(container, data, options);
+      };
+    </script>
+  </head>
+  <body onload="draw();">
+    <h2>Airlines</h2>
+    <div id="airlines"></div>
+  </body>
+</html>
