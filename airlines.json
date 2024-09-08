@@ -650,7 +650,7 @@ var airlines = [
     "iata": "ak",
     "icao": "axm",
     "name": "AirAsia",
-    ""
+    "url": "https://www.airasia.com",
   },
   {
     "iata": "9k",
