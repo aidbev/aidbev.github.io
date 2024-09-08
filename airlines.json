@@ -1,23 +1,16 @@
 var airlines = [
   // STAR ALLIANCE
   {
-    "iata": "jp",
-    "icao": "adr",
-    "name": "Adria Airways",
-    "alliance": "sa",
-    "ffp": "mm",
-    "url": "http://www.adria.si"
-  },
-  {
     "iata": "a3",
     "icao": "aee",
     "name": "Aegean Airlines",
+    "callsign": "aegean",
     "alliance": "sa",
     "ffp": {
       "name": "Miles+Bonus",
       "currency": "miles"
     },
-    "url": "http://www.aegeanair.com"
+    "url": "https://www.aegeanair.com"
   },
   {
     "iata": "ac",
@@ -28,7 +21,7 @@ var airlines = [
       "name": "Aeroplan",
       "currency": "miles"
     },
-    "url": "http://www.aircanada.com"
+    "url": "https://www.aircanada.com"
   },
   {
     "iata": "ca",
@@ -39,14 +32,14 @@ var airlines = [
       "name": "PhoenixMiles",
       "currency": "miles"
     },
-    "url": "http://www.airchina.com"
+    "url": "https://www.airchina.com"
   },
   {
     "iata": "ai",
     "icao": "aic",
     "name": "Air India",
     "alliance": "sa",
-    "url": "http://www.airindia.com"
+    "url": "https://www.airindia.com"
   },
   {
     "iata": "nz",
@@ -57,28 +50,28 @@ var airlines = [
       "name": "Airpoints",
       "currency": "Dollars"
     },
-    "url": "http://www.airnewzealand.com"
+    "url": "https://www.airnewzealand.com"
   },
   {
     "iata": "nh",
     "icao": "ana",
     "name": "All Nippon Airways",
     "alliance": "sa",
-    "url": "http://www.ana.co.jp"
+    "url": "https://www.ana.co.jp"
   },
   {
     "iata": "oz",
     "icao": "aar",
     "name": "Asiana Airlines",
     "alliance": "sa",
-    "url": "http://www.flyasiana.com"
+    "url": "https://www.flyasiana.com"
   },
   {
     "iata": "os",
     "icao": "aua",
     "name": "Austrian Airlines",
     "alliance": "sa",
-    "url": "http://www.austrian.com"
+    "url": "https://www.austrian.com"
   },
   {
     "iata": "av",
@@ -89,7 +82,7 @@ var airlines = [
       "name": "LifeMiles",
       "currency": "LifeMiles"
     },
-    "url": "http://www.avianca.com"
+    "url": "https://www.avianca.com"
   },
   {
     "iata": "sn",
@@ -100,7 +93,7 @@ var airlines = [
       "name": "Miles & More",
       "currency": "miles"
     },
-    "url": "http://www.brusselsairlines.com"
+    "url": "https://www.brusselsairlines.com"
   },
   {
     "iata": "cm",
@@ -111,7 +104,7 @@ var airlines = [
       "name": "MileagePlus",
       "currency": "miles"
     },
-    "url": "http://www.copa.com"
+    "url": "https://www.copa.com"
   },
   {
     "iata": "ou",
@@ -122,7 +115,7 @@ var airlines = [
       "name": "Miles & More",
       "currency": "miles"
     },
-    "url": "http://www.croatiaairlines.hr"
+    "url": "https://www.croatiaairlines.hr"
   },
   {
     "iata": "ms",
@@ -133,7 +126,7 @@ var airlines = [
       "name": "EgyptAir Plus",
       "currency": "miles"
     },
-    "url": "http://www.egyptair.com"
+    "url": "https://www.egyptair.com"
   },
   {
     "iata": "et",
@@ -144,14 +137,14 @@ var airlines = [
       "name": "ShebaMiles",
       "currency": "miles"
     },
-    "url": "http://www.ethiopianairlines.com"
+    "url": "https://www.ethiopianairlines.com"
   },
   {
     "iata": "br",
     "icao": "eva",
     "name": "EVA Air",
     "alliance": "sa",
-    "url": "http://www.evaair.com"
+    "url": "https://www.evaair.com"
   },
   {
     "iata": "lo",
@@ -162,7 +155,7 @@ var airlines = [
       "name": "Miles & More",
       "currency": "miles"
     },
-    "url": "http://www.lot.com"
+    "url": "https://www.lot.com"
   },
   {
     "iata": "lh",
@@ -170,15 +163,7 @@ var airlines = [
     "name": "Lufthansa",
     "alliance": "sa",
     "ffp": "lh",
-    "url": "http://www.lufthansa.com"
-  },
-  {
-    "iata": "sk",
-    "icao": "sas",
-    "name": "Scandinavian Airlines",
-    "alliance": "sa",
-    "ffp": "sk",
-    "url": "http://www.flysas.com"
+    "url": "https://www.lufthansa.com"
   },
   {
     "iata": "zh",
@@ -189,7 +174,7 @@ var airlines = [
       "name": "PhoenixMiles",
       "currency": "miles"
     },
-    "url": "http://global.shenzhenair.com"
+    "url": "https://global.shenzhenair.com"
   },
   {
     "iata": "sq",
@@ -197,14 +182,14 @@ var airlines = [
     "name": "Singapore Airlines",
     "alliance": "sa",
     "credits": ["sq", "ua", "vx"],
-    "url": "http://www.singaporeair.com"
+    "url": "https://www.singaporeair.com"
   },
   {
     "iata": "sa",
     "icao": "saa",
     "name": "South African Airways",
     "alliance": "sa",
-    "url": "http://www.flysaa.com"
+    "url": "https://www.flysaa.com"
   },
   {
     "iata": "lx",
@@ -215,7 +200,7 @@ var airlines = [
       "name": "Miles & More",
       "currency": "miles"
     },
-    "url": "http://www.swiss.com"
+    "url": "https://www.swiss.com"
   },
   {
     "iata": "tp",
@@ -226,7 +211,7 @@ var airlines = [
       "name": "Victoria",
       "currency": "miles"
     },
-    "url": "http://www.flytap.com"
+    "url": "https://www.flytap.com"
   },
   {
     "iata": "tg",
@@ -237,7 +222,7 @@ var airlines = [
       "name": "Royal Orchid Plus",
       "currency": "miles"
     },
-    "url": "http://www.thaiairways.com"
+    "url": "https://www.thaiairways.com"
   },
   {
     "iata": "tk",
@@ -248,7 +233,7 @@ var airlines = [
       "name": "Miles & Smiles",
       "currency": ""
     },
-    "url": "http://www.turkishairlines.com"
+    "url": "https://www.turkishairlines.com"
   },
   {
     "iata": "ua",
@@ -257,7 +242,7 @@ var airlines = [
     "alliance": "sa",
     "ffp": "ua",
     "credits": ["ua", "sq"],
-    "url": "http://www.united.com"
+    "url": "https://www.united.com"
   },
 
 
@@ -272,7 +257,7 @@ var airlines = [
       "name": "Aeroflot Bonus",
       "currency": "miles"
     },
-    "url": "http://www.aeroflot.com"
+    "url": "https://www.aeroflot.com"
   },
   {
     "iata": "ar",
@@ -280,7 +265,7 @@ var airlines = [
     "name": "Aerolíneas Argentinas",
     "alliance": "st",
     "ffp": "Aerolíneas Plus",
-    "url": "http://www.aerolineas.com"
+    "url": "https://www.aerolineas.com"
   },
   {
     "iata": "am",
@@ -288,7 +273,7 @@ var airlines = [
     "name": "Aeroméxico",
     "alliance": "st",
     "ffp": "Club Premier",
-    "url": "http://www.aeromexico.com"
+    "url": "https://www.aeromexico.com"
   },
   {
     "iata": "ux",
@@ -300,7 +285,7 @@ var airlines = [
       "currency": "miles"
     },
     "credits": ["dl"],
-    "url": "http://www.aireuropa.com"
+    "url": "https://www.aireuropa.com"
   },
   {
     "iata": "af",
@@ -308,18 +293,18 @@ var airlines = [
     "name": "Air France",
     "alliance": "st",
     "credits": ["dl"],
-    "url": "http://www.airfrance.com"
+    "url": "https://www.airfrance.com"
   },
   {
     "iata": "az",
     "icao": "aza",
-    "name": "Alitalia",
+    "name": "ITA Airways",
     "alliance": "st",
     "ffp": {
       "name": "Millemiglia",
       "currency": "miles"
     },
-    "url": "http://www.alitalia.com"
+    "url": "https://www.alitalia.com"
   },
   {
     "iata": "ci",
@@ -330,7 +315,7 @@ var airlines = [
       "name": "Dynasty Flyer",
       "currency": "miles"
     },
-    "url": "http://www.china-airlines.com"
+    "url": "https://www.china-airlines.com"
   },
   {
     "iata": "mu",
@@ -341,7 +326,7 @@ var airlines = [
       "name": "Eastern Miles",
       "currency": "miles"
     },
-    "url": "http://global.ceair.com"
+    "url": "https://global.ceair.com"
   },
   {
     "iata": "cz",
@@ -352,7 +337,7 @@ var airlines = [
       "name": "Sky Pearl Club",
       "currency": "miles"
     },
-    "url": "http://www.csair.com/en"
+    "url": "https://www.csair.com/en"
   },
   {
     "iata": "ok",
@@ -363,7 +348,7 @@ var airlines = [
       "name": "OK Plus",
       "currency": "Miles"
     },
-    "url": "http://www.czechairlines.com"
+    "url": "https://www.czechairlines.com"
   },
   {
     "iata": "dl",
@@ -372,7 +357,7 @@ var airlines = [
     "alliance": "st",
     "ffp": "dl",
     "credits": ["as", "dl"],
-    "url": "http://www.delta.com"
+    "url": "https://www.delta.com"
   },
   {
     "iata": "ga",
@@ -383,14 +368,14 @@ var airlines = [
       "name": "GarudaMiles",
       "currency": "miles"
     },
-    "url": "http://www.garuda-indonesia.com"
+    "url": "https://www.garuda-indonesia.com"
   },
   {
     "iata": "kq",
     "icao": "kqa",
     "name": "Kenya Airways",
     "alliance": "st",
-    "url": "http://www.kenya-airways.com"
+    "url": "https://www.kenya-airways.com"
   },
   {
     "iata": "kl",
@@ -402,14 +387,14 @@ var airlines = [
       "currency": "miles"
     },
     "credits": ["dl", "as"],
-    "url": "http://www.klm.com"
+    "url": "https://www.klm.com"
   },
   {
     "iata": "ke",
     "icao": "kal",
     "name": "Korean Air",
     "alliance": "st",
-    "url": "http://www.koreanair.com"
+    "url": "https://www.koreanair.com"
   },
   {
     "iata": "me",
@@ -420,7 +405,7 @@ var airlines = [
       "name": "Cedar Miles",
       "currency": "Cedar Miles"
     },
-    "url": "http://www.mea.com.lb"
+    "url": "https://www.mea.com.lb"
   },
   {
     "iata": "sv",
@@ -431,14 +416,22 @@ var airlines = [
       "name": "Al-Fursan",
       "currency": "Cedar Miles"
     },
-    "url": "http://www.saudiairlines.com"
+    "url": "https://www.saudiairlines.com"
+  },
+  {
+    "iata": "sk",
+    "icao": "sas",
+    "name": "Scandinavian Airlines",
+    "alliance": "st",
+    "ffp": "sk",
+    "url": "https://www.flysas.com"
   },
   {
     "iata": "ro",
     "icao": "rot",
     "name": "TAROM",
     "alliance": "st",
-    "url": "http://www.tarom.ro/en"
+    "url": "https://www.tarom.ro/en"
   },
   {
     "iata": "vn",
@@ -449,7 +442,7 @@ var airlines = [
       "name": "Golden Lotus Plus",
       "currency": "miles"
     },
-    "url": "http://www.vietnamairlines.com"
+    "url": "https://www.vietnamairlines.com"
   },
   {
     "iata": "mf",
@@ -460,18 +453,20 @@ var airlines = [
       "name": "Egret Club",
       "currency": "miles"
     },
-    "url": "http://www.xiamenair.com/cn/en"
+    "url": "https://www.xiamenair.com/cn/en"
   },
 
 
 
   // ONEWORLD
   {
-    "iata": "ab",
-    "icao": "ber",
-    "name": "Air Berlin",
+    "iata": "as",
+    "icao": "asa",
+    "name": "Alaska Airlines",
     "alliance": "ow",
-    "url": "http://www.airberlin.com"
+    "ffp": "as",
+    "credits": ["aa", "as", "ba"],
+    "url": "https://www.alaskaair.com"
   },
   {
     "iata": "aa",
@@ -480,7 +475,7 @@ var airlines = [
     "alliance": "ow",
     "ffp": "aa",
     "credits": ["aa", "as", "ba"],
-    "url": "http://www.aa.com"
+    "url": "https://www.aa.com"
   },
   {
     "iata": "ba",
@@ -492,7 +487,7 @@ var airlines = [
       "currency": "Avios"
     },
     "credits": ["aa", "as"],
-    "url": "http://www.ba.com"
+    "url": "https://www.ba.com"
   },
   {
     "iata": "cx",
@@ -503,14 +498,14 @@ var airlines = [
       "name": "The Marco Polo Club",
       "currency": "miles"
     },
-    "url": "http://www.cathaypacific.com"
+    "url": "https://www.cathaypacific.com"
   },
   {
     "iata": "ay",
     "icao": "fin",
     "name": "Finnair",
     "alliance": "ow",
-    "url": "http://www.finnair.com"
+    "url": "https://www.finnair.com"
   },
   {
     "iata": "ib",
@@ -521,7 +516,7 @@ var airlines = [
       "name": "Iberia Plus",
       "currency": "points"
     },
-    "url": "http://www.iberia.com"
+    "url": "https://www.iberia.com"
   },
   {
     "iata": "jl",
@@ -532,7 +527,7 @@ var airlines = [
       "name": "JAL Mileage Bank",
       "currency": "miles"
     },
-    "url": "http://www.jal.com"
+    "url": "https://www.jal.com"
   },
   {
     "iata": "la",
@@ -543,28 +538,28 @@ var airlines = [
       "name": "LANPASS",
       "currency": "kms"
     },
-    "url": "http://www.lan.com"
+    "url": "https://www.lan.com"
   },
   {
     "iata": "mh",
     "icao": "mas",
     "name": "Malaysia Airlines",
     "alliance": "ow",
-    "url": "http://www.malaysiaairlines.com"
+    "url": "https://www.malaysiaairlines.com"
   },
   {
     "iata": "qf",
     "icao": "qfa",
     "name": "Qantas",
     "alliance": "ow",
-    "url": "http://www.qantas.com.au"
+    "url": "https://www.qantas.com.au"
   },
   {
     "iata": "qr",
     "icao": "qtr",
     "name": "Qatar Airways",
     "alliance": "ow",
-    "url": "http://www.qatarairways.com"
+    "url": "https://www.qatarairways.com"
   },
   {
     "iata": "rj",
@@ -575,7 +570,7 @@ var airlines = [
       "name": "Royal Plus",
       "currency": "miles"
     },
-    "url": "http://www.rj.com"
+    "url": "https://www.rj.com"
   },
   {
     "iata": "s7",
@@ -586,7 +581,7 @@ var airlines = [
       "name": "S7 Priority",
       "currency": "miles"
     },
-    "url": "http://www.s7.ru"
+    "url": "https://www.s7.ru"
   },
   {
     "iata": "ul",
@@ -597,29 +592,17 @@ var airlines = [
       "name": "FlySmiLes",
       "currency": "miles"
     },
-    "url": "http://www.srilankan.com"
+    "url": "https://www.srilankan.com"
   },
   {
     "iata": "jj",
     "icao": "tam",
-    "name": "TAM Airlines",
-    "alliance": "ow",
+    "name": "LATAM Airlines Brasil",
     "ffp": {
-      "name": "TAM Fidelidade",
-      "currency": "points"
+      "name": "LATAM Pass",
+      "currency": "kilometres"
     },
-    "url": "http://www.tam.com.br"
-  },
-  {
-    "iata": "us",
-    "icao": "awe",
-    "name": "US Airways",
-    "alliance": "ow",
-    "ffp": {
-      "name": "Dividend Miles",
-      "currency": "miles"
-    },
-    "url": "http://www.usairways.com"
+    "url": "https://www.latamairlines.com"
   },
 
 
@@ -630,19 +613,26 @@ var airlines = [
     "icao": "ein",
     "name": "Aer Lingus",
     "ffp": "Gold Circle Club",
-    "url": "http://www.aerlingus.com"
+    "url": "https://www.aerlingus.com"
   },
   {
     "iata": "xk",
     "icao": "ccm",
     "name": "Air Corsica",
-    "url": "http://www.aircorsica.com"
+    "url": "https://www.aircorsica.com"
   },
   {
     "iata": "gl",
     "icao": "grl",
     "name": "Air Greenland",
     "url": "https://www.airgreenland.com"
+  },
+  {
+    "iata": "ju",
+    "icao": "asl",
+    "name": "Air Serbia",
+    "callsign": "airserbia",
+    "url": "https://www.airserbia.com/"
   },
   {
     "iata": "tn",
@@ -654,20 +644,13 @@ var airlines = [
     "iata": "ts",
     "icao": "tsc",
     "name": "Air Transat",
-    "url": "http://www.airtransat.com"
+    "url": "https://www.airtransat.com"
   },
   {
     "iata": "ak",
     "icao": "axm",
-    "name": "AirAsia"
-  },
-  {
-    "iata": "as",
-    "icao": "asa",
-    "name": "Alaska Airlines",
-    "ffp": "as",
-    "credits": ["aa", "as", "dl"],
-    "url": "http://www.alaskaair.com"
+    "name": "AirAsia",
+    ""
   },
   {
     "iata": "9k",
@@ -676,10 +659,17 @@ var airlines = [
     "url": "https://www.capeair.com"
   },
   {
+    "iata": "4y",
+    "icao": "ocn",
+    "name": "Discover Airlines",
+    "callsign": "ocean",
+    "url": "https://www.discover-airlines.com/"
+  },
+  {
     "iata": "u2",
     "icao": "ezy",
     "name": "EasyJet",
-    "url": "http://www.easyjet.com"
+    "url": "https://www.easyjet.com"
   },
   {
     "iata": "ly",
@@ -689,17 +679,7 @@ var airlines = [
       "name": "Matmid",
       "currency": "points"
     },
-    "url": "http://www.elal.co.il"
-  },
-  {
-    "iata": "ka",
-    "icao": "hda",
-    "name": "Dragonair",
-    "ffp": {
-      "name": "The Marco Polo Club",
-      "currency": "miles"
-    },
-    "url": "http://www.dragonair.com"
+    "url": "https://www.elal.co.il"
   },
   {
     "iata": "ek",
@@ -707,7 +687,7 @@ var airlines = [
     "name": "Emirates",
     "ffp": "ek",
     "credits": ["vx", "as"],
-    "url": "http://www.emirates.com"
+    "url": "https://www.emirates.com"
   },
   {
     "iata": "ey",
@@ -718,25 +698,26 @@ var airlines = [
       "currency": "miles"
     },
     "credits": ["aa"],
-    "url": "http://www.etihad.com"
+    "url": "https://www.etihad.com"
+  },
+
+  {
+    "iata": "ew",
+    "icao": "ewg",
+    "name": "Eurowings",
+    "callsign": "eurowings",
+    "url": "https://www.eurowings.com"
   },
   {
     "iata": "fj",
     "icao": "fji",
     "name": "Fiji Airways",
-    "url": "http://www.fijiairways.com"
+    "url": "https://www.fijiairways.com"
   },
   {
     "iata": "fy",
     "icao": "ffm",
     "name": "Firefly"
-  },
-  {
-    "iata": "be",
-    "icao": "bee",
-    "name": "Flybe",
-    "ffp": "Rewards4all",
-    "url": "http://www.flybe.com"
   },
   {
     "iata": "fz",
@@ -747,16 +728,12 @@ var airlines = [
     "iata": "f9",
     "icao": "fft",
     "name": "Frontier Airlines",
+    "callsign": "frontier flight",
     "ffp": {
-      "name": "EarlyReturns",
+      "name": "Frontier Miles",
       "currency": "miles"
     },
-    "url": "http://www.flyfrontier.com"
-  },
-  {
-    "iata": "4u",
-    "icao": "gwi",
-    "name": "Germanwings",
+    "url": "https://www.flyfrontier.com"
   },
   {
     "iata": "g8",
@@ -766,7 +743,7 @@ var airlines = [
       "name": "GoClub",
       "currency": "miles"
     },
-    "url": "http://www.goair.in"
+    "url": "https://www.goair.in"
   },
   {
     "iata": "g3",
@@ -776,14 +753,14 @@ var airlines = [
       "name": "Smiles",
       "currency": "miles"
     },
-    "url": "http://www.voegol.com.br/en-us"
+    "url": "https://www.voegol.com.br/en-us"
   },
   {
     "iata": "gf",
     "icao": "gfa",
     "name": "Gulf Air",
     "ffp": "Falcon Flyer",
-    "url": "http://www.gulfair.com"
+    "url": "https://www.gulfair.com"
   },
   {
     "iata": "hu",
@@ -793,14 +770,14 @@ var airlines = [
       "name": "Fortune Wings Club",
       "currency": "miles"
     },
-    "url": "http://www.hainanairlines.com"
+    "url": "https://www.hainanairlines.com"
   },
   {
     "iata": "ha",
     "icao": "hal",
     "name": "Hawaiian Airlines",
     "ffp": "HawaiianMiles",
-    "url": "http://www.hawaiianairlines.com"
+    "url": "https://www.hawaiianairlines.com"
   },
   {
     "iata": "fi",
@@ -810,13 +787,7 @@ var airlines = [
       "name": "Saga Club",
       "currency": "Saga Points"
     },
-    "url": "http://www.icelandair.com"
-  },
-  {
-    "iata": "9w",
-    "icao": "jai",
-    "name": "Jet Airways",
-    "url": "http://www.jetairways.com"
+    "url": "https://www.icelandair.com"
   },
   {
     "iata": "b6",
@@ -824,45 +795,45 @@ var airlines = [
     "name": "JetBlue",
     "ffp": "TrueBlue",
     "credits": ["b6", "sq"],
-    "url": "http://www.jetblue.com"
+    "url": "https://www.jetblue.com"
   },
   {
     "iata": "jq",
     "icao": "jst",
     "name": "Jetstar",
-    "url": "http://www.jetstar.com"
+    "url": "https://www.jetstar.com"
   },
   {
-    "iata": "zb",
-    "icao": "mon",
-    "name": "Monarch Airlines",
-    "ffp": {
-      "name": "Vantage Club",
-      "currency": "miles"
-    },
-    "url": "http://www.monarch.co.uk"
+    "iata": "n0",
+    "icao": "nbt",
+    "callsign": "longship",
+    "name": "Norse Atlantic Airways",
+    "url": "https://www.flynorse.com"
+  },
+  {
+    "iata": "z0",
+    "icao": "ubt",
+    "callsign": "longboat",
+    "name": "Norse Atlantic UK",
+    "url": "https://www.flynorse.com"
   },
   {
     "iata": "dy",
-    "icao": "nax",
+    "icao": "noz",
     "name": "Norwegian Air Shuttle",
+    "callsign": "nordic",
     "ffp": {
       "name": "Norwegian Reward",
       "currency": "CashPoints"
     },
-    "url": "http://www.norwegian.com"
+    "url": "https://www.norwegian.com"
   },
   {
-    "iata": "ec",
-    "icao": "bos",
-    "name": "OpenSkies",
-    "url": "http://www.flyopenskies.com"
-  },
-  {
-    "iata": "ks",
-    "icao": "pen",
+    "iata": "og",
+    "icao": "fpy",
     "name": "PenAir",
-    "url": "http://www.penair.com"
+    "callsign": "player",
+    "url": "https://flyplay.com"
   },
   {
     "iata": "pd",
@@ -872,31 +843,32 @@ var airlines = [
       "name": "VIPorter",
       "currency": "Points"
     },
-    "url": "http://www.flyporter.com"
+    "url": "https://www.flyporter.com"
   },
   {
     "iata": "fr",
     "icao": "ryr",
     "name": "Ryanair",
-    "url": "http://www.ryanair.com"
+    "url": "https://www.ryanair.com"
   },
   {
     "iata": "s4",
     "icao": "rzo",
-    "name": "SATA",
-    "url": "http://www.sata.pt"
+    "name": "Azores Airlines",
+    "callsign": "Air Azores",
+    "url": "https://www.azoresairlines.pt"
   },
   {
     "iata": "bb",
     "icao": "sbs",
     "name": "Seaborne Airlines",
-    "url": "http://www.seaborneairlines.com"
+    "url": "https://www.seaborneairlines.com"
   },
   {
     "iata": "3m",
     "icao": "sil",
     "name": "Silver Airways",
-    "url": "http://www.silverairways.com"
+    "url": "https://www.silverairways.com"
   },
   {
     "iata": "wn",
@@ -906,43 +878,31 @@ var airlines = [
       "name": "Rapid Rewards",
       "currency": "points"
     },
-    "url": "http://www.southwest.com"
+    "url": "https://www.southwest.com"
   },
   {
     "iata": "nk",
     "icao": "nks",
     "name": "Spirit Airlines",
     "ffp": "Free Spirit",
-    "url": "http://www.spirit.com"
+    "url": "https://www.spirit.com"
   },
   {
     "iata": "sy",
     "icao": "scx",
     "name": "Sun Country Airlines",
+    "callsign": "Sun Country",
     "ffp": {
-      "name": "Ufly Rewards Plus",
+      "name": "Sun Country Rewards",
       "currency": ""
     },
-    "url": "http://www.suncountry.com"
-  },
-  {
-    "iata": "mt",
-    "icao": "tcx",
-    "name": "Thomas Cook Airlines",
-  },
-  {
-    "iata": "vx",
-    "icao": "vrd",
-    "name": "Virgin America",
-    "ffp": "vx",
-    "credits": ["vx", "sq", "ek"],
-    "url": "http://www.virginamerica.com"
+    "url": "https://www.suncountry.com"
   },
   {
     "iata": "va",
     "icao": "voz",
     "name": "Virgin Australia",
-    "url": "http://www.virginaustralia.com"
+    "url": "https://www.virginaustralia.com"
   },
   {
     "iata": "vs",
@@ -952,7 +912,7 @@ var airlines = [
       "name": "Flying Club",
       "currency": "miles"
     },
-    "url": "http://www.virgin-atlantic.com"
+    "url": "https://www.virginatlantic.com"
   },
   {
     "iata": "vy",
@@ -962,41 +922,30 @@ var airlines = [
       "name": "Punto",
       "currency": "points"
     },
-    "url": "http://www.vueling.com"
+    "url": "https://www.vueling.com"
   },
   {
     "iata": "ws",
     "icao": "wja",
     "name": "WestJet",
-    "url": "http://www.westjet.com"
+    "url": "https://www.westjet.com"
   },
   {
     "iata": "wf",
     "icao": "wif",
     "name": "Widerøe",
+    "callsign": "wideroe",
     "ffp": {
       "name": "EuroBonus",
       "currency": "miles"
     },
-    "url": "http://www.wideroe.no"
+    "url": "https://www.wideroe.no"
   },
   {
     "iata": "w6",
     "icao": "wzz",
     "name": "Wizz Air",
-    "url": "http://www.wizzair.com"
-  },
-  {
-    "iata": "ww",
-    "icao": "wow",
-    "name": "WOW Air",
-    "url": "http://www.wowair.com"
-  },
-  {
-    "iata": "se",
-    "icao": "xlf",
-    "name": "XL Airways France",
-    "url": "http://www.xl.com"
+    "url": "https://www.wizzair.com"
   }
 ];
 
@@ -1013,7 +962,7 @@ var ffps = {
         y: 1, b: 1, w: 1,
         h: 1, k: 1, m: 1, l: 1, w: 1, v: 1,
         g: 1, q: 1, n: 1, o: 1, s: 1,
-        "url": "http://www.aa.com/i18n/AAdvantage/earnMiles/airlines/american.jsp"
+        "url": "https://www.aa.com/i18n/AAdvantage/earnMiles/airlines/american.jsp"
       },
       "as": {
         "revenue": false,
@@ -1022,7 +971,7 @@ var ffps = {
         y: 1, s: 1,
         b: 1, h: 1, m: 1, q: 1, u: 1,
         g: 1, k: 1, l: 1, t: 1, v: 1,
-        "url": "http://www.aa.com/i18n/AAdvantage/earnMiles/airlines/alaska-airlines.jsp"
+        "url": "https://www.aa.com/i18n/AAdvantage/earnMiles/airlines/alaska-airlines.jsp"
       },
       "ba": {
         "revenue": false,
@@ -1033,21 +982,21 @@ var ffps = {
         h: 1,
         k: 1, l: 1, m: 1, v: 1,
         g: 1, q: 1, s: 1, n: 1, o: 1,
-        "url": "http://www.aa.com/i18n/AAdvantage/earnMiles/airlines/british.jsp"
+        "url": "https://www.aa.com/i18n/AAdvantage/earnMiles/airlines/british.jsp"
       },
       "ey": {
         "revenue": false,
         f: 1.5, a: 1.5, r: 1.5,
         j: 1.25, c: 1.25, d: 1.25, w: 1.25,
         y: 1, e: 1, b: 1, h: 1, k: 1, m: 1, q: 1, l: 1, v: 1, u: 1,
-        "url": "http://www.aa.com/i18n/AAdvantage/earnMiles/airlines/etihad.jsp"
+        "url": "https://www.aa.com/i18n/AAdvantage/earnMiles/airlines/etihad.jsp"
       }
     },
     "redeem": [
       "ab", "ba", "cx", "ay", "ib", "jl", "la", "mh", "qf", "qr", "rj", "s7", "ul", "jj",
       "tn", "as", "9k", "ey", "fj", "gf", "ha", "9w", "bb"
     ],
-    "url": "http://www.aa.com/i18n/AAdvantage/earnMiles/travel/airlines/main.jsp"
+    "url": "https://www.aa.com/i18n/AAdvantage/earnMiles/travel/airlines/main.jsp"
   },
   "dl": {
     "name": "SkyMiles",
@@ -1068,7 +1017,7 @@ var ffps = {
         k: 0.75,
         h: 0.5, l: 0.5, q: 0.5, t: 0.5, e: 0.5, n: 0.5,
         r: 0.25, g: 0.25, v: 0.25,
-        "url": "http://www.delta.com/content/www/en_US/skymiles/earn-miles/earn-miles-with-partners/airlines/air-france.html"
+        "url": "https://www.delta.com/content/www/en_US/skymiles/earn-miles/earn-miles-with-partners/airlines/air-france.html"
       },
       "as": {
         "revenue": false,
@@ -1077,7 +1026,7 @@ var ffps = {
         s: 1, m: 1, b: 1, h: 1,
         q: 0.75, l: 0.75, v: 0.75,
         k: 0.5, g: 0.5, t: 0.5, r: 0.5,
-        "url": "http://www.delta.com/content/www/en_US/skymiles/earn-miles/earn-miles-with-partners/airlines/alaska-airlines.html"
+        "url": "https://www.delta.com/content/www/en_US/skymiles/earn-miles/earn-miles-with-partners/airlines/alaska-airlines.html"
       },
       "az": {
         "revenue": false,
@@ -1088,7 +1037,7 @@ var ffps = {
         k: 0.75, v: 0.75, t: 0.75,
         n: 0.5, s: 0.5, q: 0.5, x: 0.5, g: 0.5,
         r: 0.25, f: 0.25, o: 0.25, l: 0.25, w: 0.25,
-        "url": "http://www.delta.com/content/www/en_US/skymiles/earn-miles/earn-miles-with-partners/airlines/alitalia.html"
+        "url": "https://www.delta.com/content/www/en_US/skymiles/earn-miles/earn-miles-with-partners/airlines/alitalia.html"
       },
       "kl": {
         "revenue": false,
@@ -1099,14 +1048,14 @@ var ffps = {
         k: 0.75, w: 0.75,
         h: 0.5, l: 0.5, q: 0.5, t: 0.5, e: 0.5, n: 0.5, s: 0.5, a: 0.5,
         r: 0.25, g: 0.25, v: 0.25,
-        "url": "http://www.delta.com/content/www/en_US/skymiles/earn-miles/earn-miles-with-partners/airlines/klm-royal-dutch-airlines.html"
+        "url": "https://www.delta.com/content/www/en_US/skymiles/earn-miles/earn-miles-with-partners/airlines/klm-royal-dutch-airlines.html"
       }
     },
     "redeem": [
       "su", "ar", "am", "ux", "af", "az", "ci", "mu", "cz", "ok", "ga", "kq", "kl", "ke", "me", "sv", "ro", "vn", "mf",
       "as", "g3", "ha", "tn", "vs", "va", "zk"
     ],
-    "url": "http://www.delta.com/content/www/en_US/skymiles/use-miles/award-travel/airlines-and-mileage-charts.html"
+    "url": "https://www.delta.com/content/www/en_US/skymiles/use-miles/award-travel/airlines-and-mileage-charts.html"
   },
   "ba": {
     "name": "Executive Club",
@@ -1120,7 +1069,7 @@ var ffps = {
         y: 1, b: 1,
         h: 0.5, k: 0.5, m: 0.5, l: 0.5, w: 0.5, v: 0.5,
         g: 0.25, q: 0.25, n: 0.25, o: 0.25, s: 0.25,
-        "url": "http://www.britishairways.com/en-us/executive-club/modalContent/executive-club/avios/collecting-avios/flights/american-airlines-collecting-avios.html"
+        "url": "https://www.britishairways.com/en-us/executive-club/modalContent/executive-club/avios/collecting-avios/flights/american-airlines-collecting-avios.html"
       },
     },
     "redeem": ["aa"],
@@ -1149,7 +1098,7 @@ var ffps = {
         a: 1.5, f: 1.5, p: 1.5,
         c: 1.25, d: 1.25, i: 1.25, j: 1.25,
         b: 1, g: 1, h: 1, k: 1, l: 1, m: 1, n: 1, o: 1, q: 1, r: 1, s: 1, v: 1, w: 1, x: 1, y: 1,
-        "url": "http://www.alaskaair.com/content/mileage-plan/partners/american.aspx"
+        "url": "https://www.alaskaair.com/content/mileage-plan/partners/american.aspx"
       },
       "af": {
         "revenue": false,
@@ -1159,14 +1108,14 @@ var ffps = {
         t: 0.25, e: 0.25, n: 0.25, v: 0.25, r: 0.25, g: 0.25,
         h: 0.5, l: 0.5, q: 0.5, u: 0.75, k: 0.75,
         y: 1, b: 1, m: 1,
-        "url": "http://www.alaskaair.com/content/mileage-plan/partners/air-france.aspx"
+        "url": "https://www.alaskaair.com/content/mileage-plan/partners/air-france.aspx"
       },
       "as": {
         "revenue": false,
         f: 1.75, p: 1.75,
         y: 1.5, s: 1.5, m: 1.25, b: 1.25,
         h: 1, q: 1, l: 1, v: 1, k: 1, g: 1, t: 1, r: 1, u: 1,
-        "url": "http://www.alaskaair.com/content/mileage-plan/earn-use-miles/earn-on-alaska.aspx"
+        "url": "https://www.alaskaair.com/content/mileage-plan/earn-use-miles/earn-on-alaska.aspx"
       },
       "ba": {
         "revenue": false,
@@ -1176,7 +1125,7 @@ var ffps = {
         q: 0.25, o: 0.25, g: 0.25,
         k: 0.5, l: 0.5, m: 0.5, n: 0.5, s: 0.5, v: 0.5,
         y: 1, b: 1, h: 1,
-        "url": "http://www.alaskaair.com/content/mileage-plan/partners/british.aspx"
+        "url": "https://www.alaskaair.com/content/mileage-plan/partners/british.aspx"
       },
       "dl": {
         "revenue": false,
@@ -1191,7 +1140,7 @@ var ffps = {
         h: 0.75, q: 0.75, k: 0.75,
         l: 0.5, u: 0.5, t: 0.5, x: 0.5, v: 0.5,
         e: 0.25,
-        "url": "http://www.alaskaair.com/content/mileage-plan/partners/delta.aspx"
+        "url": "https://www.alaskaair.com/content/mileage-plan/partners/delta.aspx"
       },
       "ek": {
         "revenue": false,
@@ -1199,7 +1148,7 @@ var ffps = {
         j: 1.25, c: 1.25, o: 1.25, i: 1.25,
         y: 1, e: 1, r: 1, w: 1,
         m: 0.5, b: 0.5, u: 0.5, k: 0.5, q: 0.5, l: 0.5, t: 0.5, v: 0.5, x: 0.5, h: 0.5,
-        "url": "http://www.alaskaair.com/content/mileage-plan/partners/klm.aspx"
+        "url": "https://www.alaskaair.com/content/mileage-plan/partners/klm.aspx"
       },
       "kl": {
         "revenue": false,
@@ -1208,7 +1157,7 @@ var ffps = {
         h: 0.5, l: 0.5, q: 0.5, s: 0.5, a: 0.5,
         u: 0.75, w: 0.75,
         y: 1, b: 1, m: 1,
-        "url": "http://www.alaskaair.com/content/mileage-plan/partners/klm.aspx"
+        "url": "https://www.alaskaair.com/content/mileage-plan/partners/klm.aspx"
       },
     },
     "redeem": ["aa", "am", "af", "ba", "cx", "dl", "ek", "fj", "kl", "ke", "la", "ks", "qf"],
@@ -1241,11 +1190,11 @@ var ffps = {
         d: 2, c: 2, j: 2, z: 1.5, q: 1.5, w: 1.5, y: 1.25,
         i: 1, m: 1, u: 1, e: 1, h: 1, b: 1, v: 1,
         n: 0.5, s: 0.5, l: 0.5,
-        "url": "http://www.emirates.com/english/skywards/about/partners/airlines/virgin-america.aspx"
+        "url": "https://www.emirates.com/english/skywards/about/partners/airlines/virgin-america.aspx"
       },
     },
     "redeem": ["as", "u2", "jl", "9w", "b6", "jq", "ke", "qf", "s7", "sa", "tp", "vx"],
-    "url": "http://www.emirates.com/vn/English/Skywards/about/partners/our-partners.aspx"
+    "url": "https://www.emirates.com/vn/English/Skywards/about/partners/our-partners.aspx"
   },
   "sq": {
     "name": "KrisFlyer",
@@ -1258,7 +1207,7 @@ var ffps = {
         y: 1, e: 1, k: 1, h: 1, q: 1, b: 1,
         l: 1, v: 1, r: 1, w: 1, m: 1,
         z: 0.5, o: 0.5, u: 0.5, s: 0.5, p: 0.5,
-        "url": "http://www.singaporeair.com/pdf/ppsclub_krisflyer/charts/KFOALLevels.pdf"
+        "url": "https://www.singaporeair.com/pdf/ppsclub_krisflyer/charts/KFOALLevels.pdf"
       },
       "sq": {
         "revenue": false,
@@ -1266,21 +1215,21 @@ var ffps = {
         p: 1.1, s: 1.1, t: 1.1,
         b: 1, e: 1, h: 1, l: 1, m: 1, w: 1, y: 1,
         n: 0.5, q: 0.5, k: 0.1, v: 0.1,
-        "url": "http://www.singaporeair.com/pdf/ppsclub_krisflyer/charts/KFOALLevels.pdf"
+        "url": "https://www.singaporeair.com/pdf/ppsclub_krisflyer/charts/KFOALLevels.pdf"
       },
       "ua": {
         "revenue": false,
         a: 1.5, f: 1.5, c: 1.25, d: 1.25, j: 1.25,
         p: 1, z: 1, b: 1, e: 1, g: 1, h: 1, k: 1, l: 1,
         m: 1, q: 1, s: 1, t: 1, u: 1, v: 1, w: 1, y: 1,
-        "url": "http://www.singaporeair.com/pdf/ppsclub_krisflyer/charts/KFOALLevels.pdf"
+        "url": "https://www.singaporeair.com/pdf/ppsclub_krisflyer/charts/KFOALLevels.pdf"
       },
       "vx": {
         "revenue": false,
         c: 1.5, d: 1.5, j: 1.5,
         o: 1, q: 1, w: 1, z: 1, b: 1, e: 1, h: 1,
         i: 1, l: 1, m: 1, s: 1, u: 1, v: 1, y: 1,
-        "url": "http://www.singaporeair.com/pdf/ppsclub_krisflyer/charts/KFOALLevels.pdf"
+        "url": "https://www.singaporeair.com/pdf/ppsclub_krisflyer/charts/KFOALLevels.pdf"
       }
     },
     "redeem": [
@@ -1307,7 +1256,7 @@ var ffps = {
     "redeem": [
       "jp", "a3", "ac", "ca", "ai", "nz", "nh", "oz", "os", "av", "sn", "cm", "ou", "ms", "et", "br", "lo", "lh", "sk", "zh", "sq", "sa", "lx", "tp", "tg", "tk",
       "ei", "9k", "zk", "4u", "ha", "9w", "3m"],
-    "url": "http://www.united.com/CMS/en-US/Marketing/CustComm/Promotions/Pages/AirlinePartners.aspx"
+    "url": "https://www.united.com/CMS/en-US/Marketing/CustComm/Promotions/Pages/AirlinePartners.aspx"
   },
   "vx": {
     "name": "Elevate",
