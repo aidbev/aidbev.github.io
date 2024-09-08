@@ -19,7 +19,7 @@ var airlines = [
     "alliance": "sa",
     "ffp": {
       "name": "Aeroplan",
-      "currency": "miles"
+      "currency": "points"
     },
     "url": "https://www.aircanada.com"
   },
@@ -80,7 +80,7 @@ var airlines = [
     "alliance": "sa",
     "ffp": {
       "name": "LifeMiles",
-      "currency": "LifeMiles"
+      "currency": "miles"
     },
     "url": "https://www.avianca.com"
   },
@@ -231,7 +231,7 @@ var airlines = [
     "alliance": "sa",
     "ffp": {
       "name": "Miles & Smiles",
-      "currency": ""
+      "currency": "miles"
     },
     "url": "https://www.turkishairlines.com"
   },
@@ -239,6 +239,7 @@ var airlines = [
     "iata": "ua",
     "icao": "ual",
     "name": "United Airlines",
+    "callsign": "united",
     "alliance": "sa",
     "ffp": "ua",
     "credits": ["ua", "sq"],
@@ -831,7 +832,7 @@ var airlines = [
   {
     "iata": "og",
     "icao": "fpy",
-    "name": "PenAir",
+    "name": "Play",
     "callsign": "player",
     "url": "https://flyplay.com"
   },

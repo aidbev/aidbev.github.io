@@ -269,6 +269,7 @@
           // });
           var info = $(document.createElement('p'))
             .addClass('info')
+            .text(airline.callsign?.toUpperCase())
             .css('display', 'none')
             .appendTo(wrapper);
           var link = $(document.createElement('a'))
@@ -276,10 +277,19 @@
             .html(airline.url)
             .attr('href', airline.url)
             .appendTo(info);
-          $(document.createElement('p'))
-            .addClass('info')
-            .text(airline.ffp?(airline.ffp.name+" "+airline.ffp.currency):airline.ffp)
-            .appendTo(info);
+          if(airline.ffp){
+            if(airline.ffp.name){
+              $(document.createElement('p'))
+                .addClass('info')
+                .text(airline.ffp.name+" "+airline.ffp.currency)
+                .appendTo(info);
+            } else {
+              $(document.createElement('p'))
+                .addClass('info')
+                .text(ffps[airline.ffp].name+" "+ffps[airline.ffp].currency)
+                .appendTo(info);
+            }
+          }
         });
       }
       function lookup(iata) {
